@@ -1,0 +1,27 @@
+section {
+  min-height: 100vh;
+  float: left;
+  position: relative;
+  padding-bottom: 40px;
+  width: 100%;
+  display: table;
+  &:nth-of-type(2n+1) {
+    background-color: #29282c;
+  }
+  &:nth-of-type(2n) {
+    background-color: #fff;
+    h2.section-title {
+      color: #29282c;
+    }
+  }
+  &.selfheight {
+    min-height: 0;
+  }
+  div.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: table-cell; vertical-align: middle;
+  }
+}
